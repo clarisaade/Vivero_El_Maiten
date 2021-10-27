@@ -43,7 +43,7 @@ document.getElementById("footer").innerHTML = `
 <p>Proyecto Integrador HTML-CSS-JS </p>
 
 &copy; Todos los derechos reservados
-<a href="#">Clarisa Saade</a>&nbsp; &nbsp;<a href="https://github.com/clarisaade/proyecto_git.git" target="_blanck"><i id="github" class="fab fa-github"></i></a>
+<a href="#">Clarisa Saade</a>&nbsp; &nbsp;<a href="https://github.com/clarisaade/Vivero_El_Maiten.git" target="_blanck"><i id="github" class="fab fa-github"></i></a>
 </div>
 `
 
