@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Maiten Vivero Forestal</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body id="body-contact">
+    <header class="header" id="idheader"></header>
+    <main class="main-contacto">
+        <section class="contacto">
+            <form action="#" name="formulario" method="post" id="form">
+
+                <h2 class="h2-contact">CONTACTO</h2>
+                <div class="datos">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="Nombre" id="nombre">
+                    <br>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="Apellido" id="apellido">
+                    <br>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" name="Email" id="email" placeholder="  @  ">
+                    <br>
+                    <label for="nombre">Número de celular:</label>
+                    <input type="tel" name="Telefono" id="telefono" pattern="[0-9]{9,}" title="El número de teléfono debe contener 9 o más carácteres. Ej: 'cód.area' 'número tel'">
+                    <br>
+                </div>
+                <div class="motivo">
+
+                    <p>&nbsp; &nbsp;Motivo:
+                        <br>
+                        <input type="radio" name="motivo" id="comercial" value="comercial"> Contacto comercial
+                        <br>
+
+                        <input type="radio" name="motivo" id="cliente" value="cliente"> Atención al cliente
+                        <br>
+
+                        <input type="radio" name="motivo" id="proveedores" value="proveedores"> Contacto de Proveedores
+                    </p>
+                </div>
+                <br>
+                <textarea name="mensaje" placeholder="Mensaje" required maxlength="300"></textarea>
+                <br>
+                <input type="submit" id="btn" name="btn" value="Enviar" onclick="store()">
+
+            </form>
+        </section>
+        <section class="mapa">
+            <h2 class="animate__animated animate__bounceInRight animate__slower	1s" style="height: 150px;">El Maiten Vivero Forestal<br> Bahía Blanca</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3114.7374188758236!2d-62.23846468504138!3d-38.6779022917521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95eda50d6edc6871%3A0xaaba46f87473a7e3!2sTrelew%204000%2C%20B8003%20Bah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1634418471436!5m2!1ses!2sar"
+                style="border:0;" allowfullscreen="true" loading="lazy"></iframe>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+
+    <script>
+        (function() {
+            //Variables
+            var formulario = document.getElementsByName('formulario')[0],
+                elementos = formulario.elements,
+                boton = document.getElementById('btn');
+
+            var validarNombre = function(e) {
+                if (formulario.nombre.value == 0) {
+                    alert("Complete el campo nombre");
+                    e.preventDefault();
+                }
+            };
+
+            var validarApellido = function(e) {
+                if (formulario.apellido.value == 0) {
+                    alert("Complete el campo apellido");
+                    e.preventDefault();
+
+                }
+            };
+
+            var validarEmail = function(e) {
+                if (formulario.email.value == 0) {
+                    alert("E-mail requerido");
+                    e.preventDefault();
+
+                }
+            };
+
+            var validarTelefono = function(e) {
+                if (formulario.telefono.value == 0) {
+                    alert("Teléfono requerido");
+                    e.preventDefault();
+
+                }
+            };
+
+            var validarRadio = function(e) {
+                if (formulario.motivo[0].checked == true ||
+                    formulario.motivo[1].checked == true ||
+                    formulario.motivo[2].checked == true) {} else {
+                    alert("Seleccione el motivo de su contacto");
+                    e.preventDefault();
+                }
+            };
+
+            var validar = function(e) {
+                validarNombre(e);
+                validarApellido(e);
+                validarEmail(e);
+                validarTelefono(e);
+                validarRadio(e);
+
+            };
+            formulario.addEventListener("submit", validar);
+        }())
+
+
+
+        function store() {
+            if (typeof(Storage) !== "undefined") {
+
+                {
+                    var inputEmail = document.getElementById("email");
+                    localStorage.setItem("email", inputEmail.value);
+                }
+
+
+                {
+                    var inputNombre = document.getElementById("nombre");
+                    localStorage.setItem("nombre", inputNombre.value);
+
+                }
+
+                {
+                    var inputApellido = document.getElementById("apellido");
+                    localStorage.setItem("apellido", inputApellido.value);
+                }
+
+            } else {
+                alert = "Su navegador no soporta Web Storage";
+            }
+        }
+
+
+
+
+
+
+        // if (typeof(Storage) !== "undefined") {
+
+        //     // Store
+        //     localStorage.setItem("nombre", "Claudia");
+        //     localStorage.setItem("nombre", "Maria");
+        //     localStorage.setItem("apellido", "Perez");
+        //     localStorage.setItem("email", "mp@gmail.com");
+        //     // Retrieve
+        //     document.getElementById("nombre").value = localStorage.getItem("nombre");
+        //     document.getElementById("apellido").value = localStorage.getItem("apellido");
+        //     document.getElementById("email").value = localStorage.getItem("email");
+
+        // } else {
+        //     alert = "Su navegador no soporta Web Storage";
+        // }
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
