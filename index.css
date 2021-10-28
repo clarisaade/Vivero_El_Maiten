@@ -497,6 +497,7 @@
                     }
                     .header {
                         height: 60px;
+                        max-width: 992px;
                     }
                     .nav {
                         align-items: stretch;
@@ -600,6 +601,7 @@
                     }
                     .header {
                         height: 60px;
+                        max-width: 992px;
                     }
                     .nav {
                         align-items: center;
