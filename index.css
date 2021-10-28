@@ -87,8 +87,8 @@
                 .menu-list a:hover {
                     color: whitesmoke;
                     font-weight: bold;
-                    bottom: 0.2rem;
-                    transition: 0.5s;
+                    bottom: 0.3rem;
+                    transition: 0.7s;
                     text-shadow: 1vw 1vw 1vw rgb(130, 146, 133);
                 }
                 
@@ -134,8 +134,8 @@
                 .sub-item a:hover {
                     color: whitesmoke;
                     font-weight: bold;
-                    bottom: 0.2rem;
-                    transition: 0.5s;
+                    bottom: 0.3rem;
+                    transition: 0.7s;
                     text-shadow: 1vw 1vw 1vw rgb(130, 146, 133);
                 }
                 /* ----NAV-BUTTON---- */
@@ -305,6 +305,7 @@
                     line-height: 50px;
                     color: navajowhite;
                     border-radius: 5px;
+                    margin: 0 4rem;
                 }
                 
                 .main-contacto {

@@ -16,7 +16,7 @@ document.getElementById("idheader").innerHTML = `
 
                     <li class="menu-item"><a href="cuidados.html">CUIDADOS</a></li>
                     <li class="menu-item"><a href="contacto.html">CONTACTO</a></li>
-                    <li class="animate__animated animate__tada animate__delay-1s  animate__repeat-3	3 " id="app-whatsapp" >
+                    <li class="animate__animated animate__tada animate__delay-1s  animate__repeat-3	3" id="app-whatsapp" >
                     <a target="_blanck" href="https://api.whatsapp.com/send?phone=+5492916499028&text=Hola!">
                     <img class="whatsapp-img" , src="img/whatsapp.png" alt="whatsapp"></a>
                     </li> 
