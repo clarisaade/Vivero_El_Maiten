@@ -84,8 +84,7 @@
                     overflow: hidden;
                 }
                 
-                .menu-list a:hover,
-                {
+                .menu-list a:hover {
                     color: whitesmoke;
                     font-weight: bold;
                     bottom: 0.2rem;
