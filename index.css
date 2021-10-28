@@ -123,7 +123,7 @@
                     line-height: 60px;
                     color: black;
                     position: relative;
-                    font-size: 1rem;
+                    font-size: 0.9rem;
                 }
                 
                 .menu-item:hover>.submenu {
@@ -506,7 +506,6 @@
                         align-items: center;
                         height: 60px;
                         cursor: pointer;
-                        /* overflow: hidden; */
                         line-height: 50px;
                     }
                     body {
@@ -557,10 +556,6 @@
                     .submenu {
                         position: initial;
                         display: block;
-                    }
-                    .menu-item a {
-                        font-size: 1rem;
-                        /* border: 2px solid yellow; */
                     }
                     .nav-toogle {
                         display: block;
