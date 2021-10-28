@@ -499,7 +499,7 @@
                         height: 60px;
                     }
                     .nav {
-                        align-items: center;
+                        align-items: stretch;
                         height: 60px;
                         cursor: pointer;
                         line-height: 50px;
@@ -529,7 +529,7 @@
                     }
                     .logo,
                     .nav-button {
-                        margin: 0 5rem;
+                        margin: 0 2rem;
                     }
                     .menu {
                         height: 60px;
