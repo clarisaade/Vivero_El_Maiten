@@ -491,6 +491,105 @@
                     .third-img {
                         padding: 0;
                     }
+                    .main-contacto {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                    }
+                    .header {
+                        height: 60px;
+                    }
+                    .nav {
+                        align-items: center;
+                        height: 60px;
+                        cursor: pointer;
+                        line-height: 50px;
+                    }
+                    body {
+                        padding-top: 60px;
+                    }
+                    .logo {
+                        width: 60px;
+                        height: 60px;
+                        padding-top: 0;
+                        min-width: 50px;
+                        margin-top: 0;
+                    }
+                    .logo a>img {
+                        /* height: 50px; */
+                        width: 100%;
+                        /* border: 1px blue solid; */
+                        position: relative;
+                        margin: 0;
+                    }
+                    .logo:hover,
+                    .nav-toogle:hover {
+                        border-radius: 5px;
+                        bottom: 0rem;
+                        box-shadow: 0.3vw 0.3vw 2vw rgb(190, 201, 192) inset;
+                    }
+                    .logo,
+                    .nav-button {
+                        margin: 0 5rem;
+                    }
+                    .menu {
+                        height: 60px;
+                    }
+                    .menu-list {
+                        flex-direction: column;
+                        align-items: center;
+                        background-color: #669999;
+                        position: fixed;
+                        top: 60px;
+                        width: 100%;
+                        height: calc(100% - 60px);
+                        overflow-y: auto;
+                        left: 100%;
+                        justify-content: start;
+                    }
+                    .menu-list_visible {
+                        left: 0;
+                    }
+                    .submenu {
+                        position: initial;
+                        display: block;
+                    }
+                    .nav-toogle {
+                        display: block;
+                    }
+                    .whatsapp-img {
+                        align-items: center;
+                    }
+                    #app-whatsapp {
+                        display: flex;
+                        height: 60px;
+                        margin: 0 2rem;
+                    }
+                    .main-foto {
+                        height: 80px;
+                    }
+                    .second-img-div {
+                        display: block;
+                    }
+                    .first {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                    }
+                    iframe {
+                        width: 100%;
+                        margin: 0;
+                        padding: 5px 5px;
+                        box-sizing: border-box;
+                        border: 2px;
+                        border-radius: 7px;
+                        position: relative;
+                        background: rgba(0, 0, 0, 0.4);
+                    }
+                    h1 {
+                        font-size: 2.5rem;
+                    }
+                    body {
+                        font-size: 1rem;
+                    }
                 }
                 /* ----TABLET---- */
                 
